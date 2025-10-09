@@ -1,0 +1,21 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Contenido | Lista{% endblock %}
+
+{% block styles %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'content/css/content_style.css' %}">
+{% endblock %}
+
+{% block contenido %}
+    <div class="container">
+        {% for contenido in object_list %}
+            <div class="content-container">
+                <h2>{{contenido.title}}</h2>
+                <img src="{{contenido.image.url}}" alt="" class="img-details">
+                <p class="par-details">{{contenido.content}}</p>
+            </div>
+            
+        {% endfor %}
+    </div>
+{% endblock %}

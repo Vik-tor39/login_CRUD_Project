@@ -1,0 +1,18 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+.content-container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+h2 {
+    width: 100%;
+}
+.img-details {
+    width: 200px;
+}
+.par-details {
+    width: 600px;
+}
