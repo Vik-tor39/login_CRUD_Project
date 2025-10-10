@@ -1,0 +1,53 @@
+header {
+    padding-left: 20px;
+    background: #3498db;
+    color: white;
+    min-height: 100%;
+    border: 0.5px solid black;
+    font-size: 25px;
+}
+.container {
+    background: gainsboro;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.form-container {
+    /* border: 2px solid seagreen; */
+    display: flex;
+    flex-direction: column;   
+    padding-left: 20px;
+}
+.form-container p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 25px;
+}
+.form-container p label{
+    margin-bottom: 7px;
+}
+#id_title {
+    height: 30px;
+    width: 450px;
+}
+#id_content {
+    width: 600px;
+    height: 250px;
+    resize: none;
+}
+.input-send-details {
+    width: 600px;
+    /* height: 30px; */
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background: #3498db;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    margin-top: 35px;
+    margin-bottom: 50px;
+    font-size: 25px;
+}
