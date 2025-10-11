@@ -1,0 +1,38 @@
+{% extends 'core/base.html' %}
+
+{% block styles %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'content/css/update_form_style.css' %}">
+{% endblock %}
+
+{% block title %}{{object.title}} | Update{% endblock %}
+
+{% block contenido %}
+    <header>
+        <h1>Edit Content</h1>
+    </header>
+    {% include 'content/includes/contenido_menu.html' %}
+    <div class="container">
+        <form method="post" enctype="multipart/form-data" class="form-container">{% csrf_token %}
+            <p class="text-disp">
+                <label for="id_title">Title:</label>
+                <input type="text" name="title" value="{{object.title}}" maxlength="200" required id="id_title">
+            </p>
+            <p class="text-disp">
+                <label for="id_content">Content:</label>
+                <textarea name="content" cols="40" rows="10" required id="id_content">{{object.content}}</textarea>
+            </p>
+            <p class="img-content-box">
+                <label for="id_image">Image:</label>
+                <div class="img-position">
+                    Current Image
+                    <img src="{{object.image.url}}" alt=""><br>
+                </div>
+                <div class="img-change-position">
+                    <input type="file" name="image" accept="image/*" id="id_image">
+                </div>
+            </p>
+            <input type="submit" value="Update"class="input-send-details">
+        </form>
+    </div>
+{% endblock %}

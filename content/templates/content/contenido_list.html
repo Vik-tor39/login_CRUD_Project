@@ -11,6 +11,7 @@
     <header>
         <h1>Lista de Contenido</h1>
     </header>
+    {% include 'content/includes/contenido_menu.html' %}
     <div class="container">
         {% for contenido in page_obj %}
             <div class="content-container">
@@ -20,8 +21,8 @@
                     <p>{{contenido.content}}</p>
                     <p>
                         <a href="{% url 'detail' contenido.id contenido.title|slugify %}">Leer mas</a> |
-                        <a href="#">Editar</a> |
-                        <a href="#">Eliminar</a>
+                        <a href="{% url 'edit' contenido.id contenido.title|slugify %}">Editar</a> |
+                        <a href="{% url 'delete' contenido.id %}">Eliminar</a>
                     </p>
                 </div>
             </div>

@@ -1,0 +1,19 @@
+header {
+    padding-left: 20px;
+    background: #3498db;
+    color: white;
+    min-height: 100%;
+    border: 0.5px solid black;
+    font-size: 25px;
+}
+.container {
+    text-align: center;
+    padding-top: 50px;
+}
+.container h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+.container p {
+    font-size: 25px;
+}

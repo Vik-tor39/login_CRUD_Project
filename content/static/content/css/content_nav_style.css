@@ -1,0 +1,15 @@
+.nav-container {
+    /* border: 1px black solid; */
+    padding-left: 15px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    background: gainsboro;
+}
+.nav-container a {
+    text-decoration: none;
+    padding-right: 20px;
+    /* padding: 30px 10px 30px 10px; */
+    font-size: 20px;
+    color: black;
+}

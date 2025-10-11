@@ -11,6 +11,7 @@
     <header>
             <h1>Content Detail</h1>
     </header>
+    {% include 'content/includes/contenido_menu.html' %}
     <div class="container">
         <h2>{{object.title}}</h2>
         <div class="content-box">   
@@ -18,8 +19,8 @@
             <p>{{object.content}}</p>
         </div>
         <p class="content-links">
-            <a href="#">Editar</a> |
-            <a href="#">Eliminar</a>
+            <a href="{% url 'edit' contenido.id contenido.title|slugify %}">Editar</a> |
+            <a href="{% url 'delete' contenido.id %}">Eliminar</a>
         </p>
         
     </div>

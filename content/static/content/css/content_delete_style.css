@@ -1,0 +1,29 @@
+header {
+    padding-left: 20px;
+    background: #3498db;
+    color: white;
+    min-height: 100%;
+    border: 0.5px solid black;
+    font-size: 25px;
+}
+.form-container {
+    /* border: 2px solid seagreen; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    margin-top: 20px;
+}
+.form-container p {
+    font-size: 25px;
+}
+.form-container input {
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background: #3498db;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    width: 150px;
+}

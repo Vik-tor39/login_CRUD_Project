@@ -1,0 +1,10 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'content/css/content_nav_style.css' %}">
+
+<nav class="nav-container">
+    <a class="nav-link" href="{% url 'home' %}"><i>Home</i></a>
+    {% if request.user.is_staff %}
+    <a class="nav-link" href="{% url 'create' %}"><i>Crear Contenido</i></a>
+    <a class="nav-link" href="{% url 'contenidos' %}"><i>Listar Contenido</i></a>
+    {% endif %}
+</nav>

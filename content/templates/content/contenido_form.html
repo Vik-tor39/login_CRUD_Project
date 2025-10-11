@@ -11,6 +11,7 @@
     <header>
         <h1>Añadir nuevo contenido</h1>
     </header>
+    {% include 'content/includes/contenido_menu.html' %}
     <div class="container">
         <form action="" method="post" enctype="multipart/form-data" class="form-container">
             {% csrf_token %}

@@ -1,0 +1,19 @@
+{% extends 'core/base.html' %}
+
+{% block styles %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'core/css/home_style.css' %}">
+{% endblock %}
+
+{% block title %}Home{% endblock %}
+
+{% block contenido %}
+    <header>
+        <h1>Home</h1>
+    </header>
+    {% include 'content/includes/contenido_menu.html' %}
+    <div class="container">
+        <h2>Contenido Web Page</h2>
+        <p>Gestor de contenido en línea. CRUD básico</p>
+    </div>
+{% endblock %}
