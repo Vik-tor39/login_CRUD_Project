@@ -13,3 +13,20 @@
     font-size: 20px;
     color: black;
 }
+.logout-form-container {
+    /* border: 1px darkblue solid; */
+    margin-left: auto;
+    padding-right: 25px;
+}
+.logout-form-container input{
+    font-size: 18px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+.login-details {
+    margin-left: auto;
+    font-style: normal;
+    font-weight: bold;
+}
